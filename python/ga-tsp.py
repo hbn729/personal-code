@@ -124,9 +124,9 @@ def plot_route(cities, route):
     for i, city in enumerate(cities):
         plt.text(city[0], city[1], str(i), fontsize=12, ha='right')
         
-    plt.title('TSP Route')
-    plt.xlabel('X Coordinate')
-    plt.ylabel('Y Coordinate')
+    plt.title('TSP')
+    plt.xlabel('X')
+    plt.ylabel('Y')
     plt.grid(True)
     plt.xlim(-5, CITY_RANGE + 5)
     plt.ylim(-5, CITY_RANGE + 5)
