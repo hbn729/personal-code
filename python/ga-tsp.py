@@ -110,7 +110,7 @@ for gen in range(GEN_COUNT):
     if current_distance < best_distance:
         best_distance = current_distance
         best_individual = current_best
-    print(f"Generation {gen}: Best Distance = {best_distance}")
+    print(f"第 {gen}代: 最短路径 = {best_distance}")
 
 # 输出最终结果
 print(f"Best Route: {best_individual}")
