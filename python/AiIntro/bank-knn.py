@@ -57,17 +57,6 @@ y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'预测准确率: {accuracy:.2f}')
 
-# 使用PCA将数据降维到2维
-pca = PCA(n_components=2)
-X_pca = pca.fit_transform(X_processed)
-
-# 绘制原始数据集
-plt.figure(figsize=(10, 6))
-plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap='viridis', edgecolor='k', s=100)
-plt.title('原始数据集')
-plt.xlabel('主成分1')
-plt.ylabel('主成分2')
-plt.show()
 
 # 测试不同K值的准确率
 neighbors = list(range(1, 11))
