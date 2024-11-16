@@ -7,7 +7,7 @@ POP_SIZE = 100        # 种群大小
 GEN_COUNT = 1000      # 迭代次数
 MUTATION_RATE = 0.01  # 变异率
 CROSSOVER_RATE = 0.8  # 交叉率
-N = 10                # 节点数量
+N = 100                # 节点数量
 CITY_RANGE = 100      # 节点坐标范围
 
 # 随机生成n个二维节点
@@ -34,7 +34,7 @@ def fitness(individual, dist_matrix):
     total_distance = 0
     for i in range(N - 1):
         total_distance += dist_matrix[individual[i], individual[i + 1]]
-    total_distance += dist_matrix[individual[-1], individual[0]]  # 回到起点
+    total_distance += dist_matrix[individual[-1], individual[0]] 
     return total_distance
 
 # 轮盘赌
