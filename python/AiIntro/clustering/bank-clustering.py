@@ -6,6 +6,7 @@ from sklearn.cluster import AgglomerativeClustering
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pylab import mpl
+from sklearn.decomposition import PCA
 # 设置显示中文字体
 mpl.rcParams["font.sans-serif"] = ["SimHei"]
 plt.rcParams['axes.unicode_minus'] = False
@@ -32,36 +33,28 @@ data['层次'] = agglomerative_labels
 
 # 可视化
 plt.figure(figsize=(12, 5))
-
 plt.subplot(1, 2, 1)
 sns.scatterplot(x='age', y='duration', hue='kmeans', data=data, palette='viridis')
 plt.title('kmeans')
-
 plt.subplot(1, 2, 2)
 sns.scatterplot(x='age', y='duration', hue='层次', data=data, palette='plasma')
 plt.title('层次')
-
 plt.tight_layout()
 plt.show()
 
-
 #PCA
-from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 data['pca1'] = X_pca[:,0]
 data['pca2'] = X_pca[:,1]
 
 plt.figure(figsize=(12, 5))
-
 plt.subplot(1, 2, 1)
 sns.scatterplot(x='pca1', y='pca2', hue='kmeans', data=data, palette='viridis')
 plt.title('kmeans-PCA')
-
 plt.subplot(1, 2, 2)
 sns.scatterplot(x='pca1', y='pca2', hue='层次', data=data, palette='plasma')
 plt.title('层次-PCA')
-
 plt.tight_layout()
 plt.show()
 

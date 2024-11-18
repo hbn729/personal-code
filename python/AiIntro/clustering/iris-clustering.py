@@ -41,5 +41,9 @@ plt.ylabel('特征2')
 
 plt.tight_layout()
 plt.show()
-
+from sklearn.metrics import silhouette_score, davies_bouldin_score
+print("kmeans轮廓系数:", silhouette_score(X_scaled, kmeans_labels))
+print("层次聚类轮廓系数:", silhouette_score(X_scaled, agglomerative_labels))
+print("kmeansDB:", davies_bouldin_score(X_scaled, kmeans_labels))
+print("层次DB:", davies_bouldin_score(X_scaled, agglomerative_labels))
 
