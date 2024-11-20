@@ -8,7 +8,7 @@ from pylab import mpl
 mpl.rcParams["font.sans-serif"] = ["SimHei"]
 plt.rcParams['axes.unicode_minus'] = False
 
-file_path = 'C:\\Users\\hbn\\Desktop\\AiIntro\\Iris\\iris.csv'
+file_path = 'C:\\Users\\hbn\\Desktop\\AiIntroExpReport\\Iris\\iris.csv'
 data = pd.read_csv(file_path, header=None)
 X = data.iloc[:, :-1].values 
 y = data.iloc[:, -1].values 

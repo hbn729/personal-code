@@ -6,9 +6,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "GuessingGame",
+            "name": "Test",
             "request": "launch",
-            "mainClass": "first.GuessingGame",
+            "mainClass": "Test",
             "projectName": "code_72e5cfe6"
         },
         {
@@ -19,18 +19,29 @@
             "projectName": "code_72e5cfe6"
         },
         {
-            "type": "java",
-            "name": "java",
+            "name": "(gdb) 启动",
+            "type": "cppdbg",
             "request": "launch",
-            "mainClass": "load",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "name": "Python 调试程序: 当前文件",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "externalTerminal"
+            "program": "${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:enviroment/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }

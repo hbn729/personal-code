@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 mpl.rcParams["font.sans-serif"] = ["SimHei"]
 plt.rcParams['axes.unicode_minus'] = False
 
-file_path = 'C:\\Users\\hbn\\Desktop\\AiIntro\\Bank\\bank-additional.csv'
+file_path = 'C:\\Users\\hbn\\Desktop\\AiIntroExpReport\\Bank\\bank-additional.csv'
 data = pd.read_csv(file_path, sep=';')
 
 # 选择数值聚类

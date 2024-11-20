@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from pylab import mpl
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 # 加载数据集
-file_path = 'C:\\Users\\hbn\\Desktop\\AiIntro\\Bank\\bank-additional.csv'
+file_path = 'C:\\Users\\hbn\\Desktop\\AiIntroExpReport\\Bank\\bank-additional.csv'
 data = pd.read_csv(file_path, sep=';')
 
 X = data.drop(columns=['y'])
