@@ -307,9 +307,13 @@ Boost(set) {
         switch
         {
         case timeout=1:
-            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 55)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 100)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 5)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 20)
         case timeout=2:
-            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 80)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 100)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 5)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 20)
         }
         DllCall("powrprof.dll\PowerSetActiveScheme", "Ptr", 0, "Ptr", &scheme_current)
     }
@@ -337,7 +341,9 @@ Reset() {
     switch
     {
     default:
-        DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 100)
+        DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 50)
+        DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 0)
+        DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 5)
     }
     timeout:=DllCall("powrprof.dll\PowerSetActiveScheme", "Ptr", 0, "Ptr", &scheme_current)
 }
