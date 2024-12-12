@@ -1,4 +1,4 @@
-package secondClassWork;
+package thirdClasswork;
 
 class SpeakCar implements Runnable {
     public void run() {
