@@ -1,6 +1,7 @@
 #include <iostream>
 #define Maxint 32767
 #define MVnum 100
+#include<vector>
 using namespace std;
 
 struct Graph
@@ -10,13 +11,20 @@ struct Graph
     int vexnum, arcnum;//节点数量和边的数量
 } AMGraph;
 
-struct ArcNode{
+struct GraphNode{
     int adjvex;//所指顶点的值
-    ArcNode *nexttrac;//指向下一条边的指针
+    GraphNode *nexttrac;//指向下一条边的指针
     int info;//边的信息，这个实验是权值
 };
 
-void CreateUDG()
+struct G{
+    int numvex;
+    vector<GraphNode*> GraphNodelist;
+};
+
+void CreateUDG(G&G){
+    
+}
 void CreateUDN(Graph &G)
 {
     cin >> G.vexnum >> G.arcnum;

@@ -52,5 +52,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "map": "cpp"
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }

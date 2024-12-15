@@ -1,4 +1,3 @@
-package first;
 
 // 抽象类 Employee  
 abstract class Employee {

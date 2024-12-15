@@ -190,6 +190,7 @@ Boost(set:=0) {
                 DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 20)
                  DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmaxcores, "UInt", 20)
                 }
+                else return;
         case timeout=1:
             DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 67)
             DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 5)

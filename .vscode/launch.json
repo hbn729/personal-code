@@ -3,6 +3,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "task2",
+            "request": "launch",
+            "mainClass": "second.task2.task2",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "task3",
+            "request": "launch",
+            "mainClass": "second.task3.task3",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "second.task2.Main",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "MenuApp",
+            "request": "launch",
+            "mainClass": "second.task2.MenuApp",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "LoginApp",
+            "request": "launch",
+            "mainClass": "second.task1.LoginApp",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "LoginApp",
+            "request": "launch",
+            "mainClass": "second.LoginApp",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "testsleep2",
+            "request": "launch",
+            "mainClass": "testsleep2",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "TestSleep1",
             "request": "launch",
             "mainClass": "TestSleep1",
