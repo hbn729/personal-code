@@ -1,7 +1,7 @@
 {
     "files.associations": {
+        "iostream": "cpp",
         "ostream": "cpp",
-        "new": "cpp",
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
@@ -16,13 +16,14 @@
         "cstdint": "cpp",
         "cstdio": "cpp",
         "cstdlib": "cpp",
+        "cstring": "cpp",
         "ctime": "cpp",
         "cwchar": "cpp",
         "cwctype": "cpp",
         "deque": "cpp",
+        "list": "cpp",
         "string": "cpp",
         "unordered_map": "cpp",
-        "unordered_set": "cpp",
         "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
@@ -40,18 +41,18 @@
         "utility": "cpp",
         "format": "cpp",
         "initializer_list": "cpp",
+        "iomanip": "cpp",
         "iosfwd": "cpp",
-        "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
+        "new": "cpp",
         "numbers": "cpp",
         "span": "cpp",
+        "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "text_encoding": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp",
-        "map": "cpp"
-    },
-    "java.debug.settings.onBuildFailureProceed": true
+        "variant": "cpp"
+    }
 }

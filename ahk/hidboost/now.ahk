@@ -185,12 +185,19 @@ Boost(set:=0) {
         switch
         {
         case timeout=1:
-            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 55)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 67)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 5)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 20)
         case timeout=2:
-            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 80)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 75)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 5)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 20)
         case timeout=0:
-            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &perfepp, "UInt", 100)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemax, "UInt", 34)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &procthrottlemin, "UInt", 0)
+            DllCall("powrprof.dll\PowerWriteDCValueIndex", "Ptr", 0, "Ptr", &scheme_current, "Ptr", &sub_processor, "Ptr", &cpmincores, "UInt", 5)
         }
+        Lastexe:=exe
         DllCall("powrprof.dll\PowerSetActiveScheme", "Ptr", 0, "Ptr", &scheme_current)
     }
     if (timeout)

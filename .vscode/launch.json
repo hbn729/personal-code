@@ -1,144 +1,13 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "task2",
-            "request": "launch",
-            "mainClass": "second.task2.task2",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "task3",
-            "request": "launch",
-            "mainClass": "second.task3.task3",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "second.task2.Main",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "MenuApp",
-            "request": "launch",
-            "mainClass": "second.task2.MenuApp",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "LoginApp",
-            "request": "launch",
-            "mainClass": "second.task1.LoginApp",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "LoginApp",
-            "request": "launch",
-            "mainClass": "second.LoginApp",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "testsleep2",
-            "request": "launch",
-            "mainClass": "testsleep2",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "TestSleep1",
-            "request": "launch",
-            "mainClass": "TestSleep1",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "TestSleep",
-            "request": "launch",
-            "mainClass": "TestSleep",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "TestSleep",
-            "request": "launch",
-            "mainClass": "fourthClasswork.TestSleep",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "TestPC",
-            "request": "launch",
-            "mainClass": "TestPC",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Example12_1",
-            "request": "launch",
-            "mainClass": "secondClassWork.Example12_1",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Example12_1",
-            "request": "launch",
-            "mainClass": "Example12_1",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "EmployeeSalaryApp",
-            "request": "launch",
-            "mainClass": "first.EmployeeSalaryApp",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "name": "(gdb) 启动",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/a.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:enviroment/mingw64/bin/gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "为 gdb 启用整齐打印",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "将反汇编风格设置为 Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
-            "name": "C/C++: g++.exe 构建和调试活动文件",
+            "name": "C/C++: g++.exe 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "D:/enviroment/mingw64/bin",
+            "cwd": "D:\\enviroment\\mingw64\\bin",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -157,5 +26,6 @@
             ],
             "preLaunchTask": "C/C++: g++.exe 生成活动文件"
         }
-    ]
+    ],
+    "version": "2.0.0"
 }
